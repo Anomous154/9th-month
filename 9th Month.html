@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 9th Month Anniversary!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: pink;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3rem;
+            color: red;
+            animation: fadeIn 3s infinite alternate;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: red;
+            transform: rotate(45deg);
+            animation: heartbeat 1.5s infinite;
+        }
+        .heart:before, .heart:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+        }
+        .heart:before { top: -50px; left: 0; }
+        .heart:after { left: -50px; top: 0; }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1) rotate(45deg); }
+            50% { transform: scale(1.2) rotate(45deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 9th Month Anniversary, Zan 💗!</h1>
+    <div class="heart"></div>
+</body>
+</html>
